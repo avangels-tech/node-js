@@ -3,6 +3,7 @@ pipeline {
         docker {
             image 'node:lts-buster-slim'
             args '-p 32763:8080'
+            args "-u root" 
         }
     }
     environment {
